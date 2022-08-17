@@ -47,9 +47,6 @@
 .navbar ul li:last-of-type::after { 
     display: none;
 }
-.navbar ul li:first-of-type::after { 
-    display: none;
-}
 
 .navbar ul li a{
     height: 100%;

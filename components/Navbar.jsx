@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 
-import styles from '../styles/Navbar.module.css';
+import styles from '../styles/components/Navbar.module.css';
 import Image from 'next/image';
 import logo from '../assets/HeartKidsAcademyLogo.svg'
 
