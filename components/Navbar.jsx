@@ -16,8 +16,8 @@ export default function Navbar() {
     return (
         <nav className={styles.navbar}>
             <ul>
-                <li>
-                    <a href="/">
+                <li className={styles.logo}>
+                    <a href="/" className={styles.logoLink}>
                         <Image 
                             src={logo}
                             alt="Heart Kids Academy Logo"
@@ -29,7 +29,7 @@ export default function Navbar() {
                     <GiHamburgerMenu className='menuBtn' onClick={() => setNavOpen(!navOpen)}/>
                 </li>
                 <ul className={`${styles.links} ${!navOpen ? styles.closed : ''}`} >
-                    <li><a href="/">homepage</a></li>
+                    <li><a href="/">home</a></li>
                     <li><a href="/register">register your child</a></li>
                     <li><a href="/about">who we are</a></li>
                     <li><a href="/expectations">what you can expect</a></li>

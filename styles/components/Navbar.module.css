@@ -51,6 +51,7 @@
 .navbar ul li a{
     height: 100%;
     padding: 0 .5rem;
+    min-height: 53px;
     text-transform: uppercase;
     display: grid;
     place-items: center;
@@ -73,6 +74,8 @@
         justify-content: start;
         flex-wrap: nowrap;
         width: 100%;
+
+        overflow: hidden;
     }
     .navbar ul li::after {
         display: none;
@@ -80,8 +83,14 @@
     .navbar ul li {
         margin: 0;
     }
-    .navbar ul li a {
-        margin: 0 auto;
+    .navbar ul li a:not(.logoLink) {
+        margin: 0;
+        width: 100%;
+    }
+    .navbar ul li.logo {
+        /* margin-right: auto; */
+        display: flex;
+        justify-content: space-between;
     }
     .navbar img {
         margin: 0;
@@ -93,7 +102,6 @@
         font-size: 2rem;
         cursor: pointer;
         margin: 0 2rem;
-        margin-left: auto;
     }
 
     .links {
