@@ -2,21 +2,27 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/pages/Home.module.css'
 
-import Navbar from '../components/Navbar';
-import Banner from '../components/Banner';
+import logo from '../assets/HeartKidsAcademyLogo.svg';
+import image1 from '../assets/example.jpg';
+import image2 from '../assets/istockphoto.jpg';
+
+import {Navbar, Banner, Slideshow} from '../components/index';
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Home</title>
-        <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' />
       </Head>
       <div className={styles.container}>
         <Navbar />
         <Banner />
-        <h1>This is a test</h1>
-        <h1>Home</h1>
+        <Slideshow imgs={[logo, image1, image2]} autoscroll={true}/>
+
+        <a href='/contact' className={styles.infoBanner}>
+          <h1>Schedule A Tour Now</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem soluta sint ipsam nam neque quaerat eius tempore, aspernatur consequatur impedit.</p>
+        </a>
       </div>
     </>
   )
