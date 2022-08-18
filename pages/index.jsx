@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/Link';
 import styles from '../styles/pages/Home.module.css'
 
 import logo from '../assets/HeartKidsAcademyLogo.svg';
@@ -19,10 +20,10 @@ export default function Home() {
         <Banner />
         <Slideshow imgs={[logo, image1, image2]} autoscroll={true}/>
 
-        <a href='/contact' className={styles.infoBanner}>
+        <Link href='/contact' className={styles.infoBanner}>
           <h1>Schedule A Tour Now</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem soluta sint ipsam nam neque quaerat eius tempore, aspernatur consequatur impedit.</p>
-        </a>
+        </Link>
       </div>
     </>
   )

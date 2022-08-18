@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react';
 
 import styles from '../styles/components/Navbar.module.css';
 import Image from 'next/image';
+import Link from 'next/Link';
 import logo from '../assets/HeartKidsAcademyLogo.svg';
 
 import {GiHamburgerMenu} from 'react-icons/gi'
@@ -17,7 +18,7 @@ export default function Navbar() {
         <nav className={styles.navbar}>
             <ul>
                 <li className={styles.logo}>
-                    <a href="/" className={styles.logoLink}>
+                    <Link href="/" className={styles.logoLink}>
                         <Image 
                             src={logo}
                             alt="Heart Kids Academy Logo"
@@ -25,16 +26,16 @@ export default function Navbar() {
                             width={100}
                             height={100}
                         />
-                    </a>
+                    </Link>
                     <GiHamburgerMenu className='menuBtn' onClick={() => setNavOpen(!navOpen)}/>
                 </li>
                 <ul className={`${styles.links} ${!navOpen ? styles.closed : ''}`} >
-                    <li><a href="/">home</a></li>
-                    <li><a href="/register">register your child</a></li>
-                    <li><a href="/about">who we are</a></li>
-                    <li><a href="/expectations">what to expect</a></li>
-                    <li><a href="/moreinfo">get more info</a></li>
-                    <li><a href="/contact">contact us</a></li>
+                    <li><Link href="/">home</Link></li>
+                    <li><Link href="/register">register your child</Link></li>
+                    <li><Link href="/about">who we are</Link></li>
+                    <li><Link href="/expectations">what to expect</Link></li>
+                    <li><Link href="/moreinfo">get more info</Link></li>
+                    <li><Link href="/contact">contact us</Link></li>
                 </ul>
             </ul>
         </nav>
