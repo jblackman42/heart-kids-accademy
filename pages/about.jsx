@@ -5,7 +5,7 @@ import styles from '../styles/pages/About.module.css'
 import { Navbar, Banner, TourBanner, Footer } from '../components/index';
 
 import logo from '../assets/HeartKidsAcademyLogo.svg';
-import favicon from '../assets/HeartKidsAcademyLogo.ico';
+// import favicon from '../assets/HeartKidsAcademyLogo.ico';
 import image from '../assets/example.jpg';
 
 export default function About() {
@@ -13,7 +13,7 @@ export default function About() {
     <>
       <Head>
         <title>About - Heart Kids Academy</title>
-        <link rel="shortcut icon" href={favicon} type="image/x-icon" />
+        {/* <link rel="shortcut icon" href={favicon} type="image/x-icon" /> */}
         <meta name="description" content="At Heart Kids Academy children will experience hands on learning and play in an inspiring, exciting, developmentally appropriate environment. Our mission is to provide a positive foundation for learning in a faith-based environment where learning is fun." />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="article" />
