@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 
+:root {
+  --main-bg-color: #EEE;
+  --accent-color-1: #000;
+  --accent-color-2: #0efcba;
+  --font-primary: #EEE;
+  --font-secondary: #222;
+
+
+  --logo-banner-bg: #AAA;
+  --logo-banner-font: "Cabin", Helvetica, sans-serif;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  background: var(--main-bg-color);
 }
 
 a {

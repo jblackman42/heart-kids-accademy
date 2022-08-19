@@ -1,10 +1,13 @@
 .navbar {
     padding: 0;
     margin: 0;
-    background: black;
+    background: var(--accent-color-1);
+    color: var(--font-primary);
+    font-weight: bold;
 
     display: flex;
 }
+
 .navbar ul {
     list-style-type: none;
 
@@ -12,8 +15,8 @@
     justify-content: center;
     flex-wrap: wrap;
 
-    color: white;
-    
+    color: inherit;
+
     padding: 0;
     margin: 0 auto;
 }
@@ -44,12 +47,13 @@
     filter: opacity(.8);
     border-radius: 10px;
 }
+
 /* removes the dot to the right of the last link */
-.navbar ul li:last-of-type::after { 
+.navbar ul li:last-of-type::after {
     display: none;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     height: 100%;
     padding: 0 .5rem;
     min-height: 53px;
@@ -59,6 +63,7 @@
 }
 
 .navbar img {
+    /* COMMENT OR UNCOMMENT THIS OUT TO SWITCH BETWEEN BLACK LOGO AND WHITE LOGO */
     filter: invert(1);
     padding: .5rem 2rem !important;
     min-width: 150px !important;
@@ -78,26 +83,32 @@
 
         overflow: hidden;
     }
+
     .navbar ul li::after {
         display: none;
     }
+
     .navbar ul li {
         margin: 0;
     }
+
     .navbar ul li a:not(.logoLink) {
         margin: 0;
         width: 100%;
     }
+
     .navbar ul li.logo {
         /* margin-right: auto; */
         display: flex;
         justify-content: space-between;
     }
+
     .navbar img {
         padding: 0 2rem 0 0 !important;
         margin: 0;
         margin-right: auto;
     }
+
     .navbar svg {
         display: block;
         visibility: visible;
@@ -111,6 +122,7 @@
         height: calc(53px * 6);
         /* background-color: red; */
     }
+
     .links li {
         opacity: 1;
         transition: opacity 150ms linear;
@@ -119,6 +131,7 @@
     .navbar .links.closed {
         height: 0;
     }
+
     .navbar .links.closed li {
         opacity: 0;
     }

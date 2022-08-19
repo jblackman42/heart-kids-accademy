@@ -7,15 +7,26 @@
 }
 
 .infoBanner {
-  background-color: black;
-  color: white;
-  padding: 1rem;
+  background-color: var(--accent-color-1);
+  color: var(--font-primary);
+  font-weight: bold;
+  padding: 2rem;
   display: block;
 
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
   transition: background-color 250ms linear;
+  cursor: pointer;
 }
+
 .infoBanner:hover {
-  background-color: #000000CC;
+  background-color: #181818;
+}
+
+.infoBanner h1 {
+  margin: 0;
 }
 
 .infoBanner p {
