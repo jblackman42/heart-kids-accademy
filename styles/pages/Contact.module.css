@@ -1,0 +1,19 @@
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    min-width: 40%;
+    margin: 2rem auto;
+}
+
+.contactInfo .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contactInfo .row p {
+    margin: auto 0;
+}
