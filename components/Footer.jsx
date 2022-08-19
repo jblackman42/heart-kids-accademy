@@ -13,8 +13,8 @@ export default function Footer() {
                 <li><Link href='/tour'><a>Get a Tour</a></Link></li>
                 <li><Link href='/contact'><a>Contact Us</a></Link></li>
                 <div className={styles.socials}>
-                    <li><Link href='/'><FaFacebookSquare /></Link></li>
-                    <li><Link href='/'><FaInstagramSquare /></Link></li>
+                    <li><a href='https://www.facebook.com/heartkidsacademy/' target='_blank'><FaFacebookSquare /></a></li>
+                    <li><a href='https://www.instagram.com/heartkidsacademy/' target='_blank'><FaInstagramSquare /></a></li>
                 </div>
             </ul>
         </footer>
