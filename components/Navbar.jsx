@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 
 import styles from '../styles/components/Navbar.module.css';
 import Image from 'next/image';
-import Link from 'next/Link';
+import Link from 'next/link';
 import logo from '../assets/HeartKidsAcademyLogo.svg';
 
 import {GiHamburgerMenu} from 'react-icons/gi'
