@@ -52,12 +52,12 @@ export default function Slideshow(props) {
 
         if (diff > 5) {
             stopAutoscroll();
-            scrollLeft();
+            scrollRight();
         }
 
         if (diff < -5) {
             stopAutoscroll();
-            scrollRight();
+            scrollLeft();
         }
 
         setTouchPosition(null)
