@@ -27,6 +27,12 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-family: 'Roboto' sans-serif;
+  margin-inline: auto;
+  font-size: 1.2rem;
+}
+
 * {
   box-sizing: border-box;
 }

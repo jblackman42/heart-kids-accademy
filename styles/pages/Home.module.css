@@ -5,32 +5,3 @@
 .container h1 {
   text-align: center;
 }
-
-.infoBanner {
-  background-color: var(--accent-color-1);
-  color: var(--font-primary);
-  font-weight: bold;
-  padding: 2rem;
-  display: block;
-
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-
-  transition: background-color 250ms linear;
-  cursor: pointer;
-}
-
-.infoBanner:hover {
-  background-color: #181818;
-}
-
-.infoBanner h1 {
-  margin: 0;
-}
-
-.infoBanner p {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 850px;
-}
