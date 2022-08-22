@@ -1,10 +1,17 @@
 .paragraphContainer {
     width: 80%;
     margin-inline: auto;
+    text-align: justify;
 }
 
-.paragraphContainer h1 {
-    text-align: center;
+.paragraphContainer p {
+    padding-inline: 2rem;
+}
+.paragraphContainer p:first-of-type {
+    padding-top: 2rem;
+}
+.paragraphContainer p:last-of-type {
+    padding-bottom: 2rem;
 }
 
 .imageContainer {
@@ -22,4 +29,28 @@
     background-color: #EEE;
 
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+    width: max-content;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+.title::after, .title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: calc(40vw - 50%);
+    background-color: currentColor;
+}
+
+.title::before {
+    right: 100%;
+}
+.title::after {
+    left: 100%;
 }

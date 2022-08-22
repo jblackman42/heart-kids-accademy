@@ -27,3 +27,31 @@
     width: 90%;
     max-width: 850px;
 }
+
+.button {
+    --btn-color: var(--accent-color-1);
+
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid var(--btn-color);
+    border-radius: 0.6em;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    /* margin: 20px; */
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    box-shadow: 0 0 40px 40px var(--btn-color) inset, 0 0 0 0 var(--btn-color);
+    transition: box-shadow 150ms ease-in-out;
+}
+.button:hover {
+    outline: 0;
+    box-shadow: 0 0 10px 0 var(--btn-color) inset, 0 0 5px 0px var(--btn-color);
+}

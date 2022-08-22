@@ -33,7 +33,7 @@ export default function Navbar() {
                 </li>
                 <ul className={`${styles.links} ${!navOpen ? styles.closed : ''}`} >
                     <li><Link href="/">home</Link></li>
-                    <li><Link href="/about">who we are</Link></li>
+                    <li><Link href="/about">about us</Link></li>
                     <li><Link href="/tour">get a tour</Link></li>
                     <li><Link href="/contact">contact us</Link></li>
                 </ul>
