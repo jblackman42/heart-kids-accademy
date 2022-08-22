@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/pages/Contact.module.css'
 
-// import favicon from '../assets/HeartKidsAcademyLogo.ico';
-import logo from '../public/HeartKidsAcademyLogo.svg';
 import { Navbar, Banner, TourBanner, Footer } from '../components/index';
 
 export default function Contact() {

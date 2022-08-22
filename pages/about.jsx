@@ -4,9 +4,7 @@ import styles from '../styles/pages/About.module.css'
 
 import { Navbar, Banner, TourBanner, Footer } from '../components/index';
 
-import logo from '../public/HeartKidsAcademyLogo.svg';
-// import favicon from '../assets/HeartKidsAcademyLogo.ico';
-import image from '../public/example.jpg';
+import image from '../public/assets/example.jpg';
 
 export default function About() {
   return (

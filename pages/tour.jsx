@@ -2,8 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/pages/Home.module.css'
 
-// import favicon from '../assets/HeartKidsAcademyLogo.ico';
-import logo from '../public/HeartKidsAcademyLogo.svg';
 import { Navbar, Banner } from '../components/index';
 
 export default function Tour() {

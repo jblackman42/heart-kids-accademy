@@ -4,9 +4,9 @@ import Link from 'next/link';
 import styles from '../styles/pages/Home.module.css'
 
 // import favicon from '../assets/HeartKidsAcademyLogo.ico';
-import logo from '../public/HeartKidsAcademyLogo.svg';
-import image1 from '../public/example.jpg';
-import image2 from '../public/istockphoto.jpg';
+import logo from '../public/assets/HeartKidsAcademyLogo.svg';
+import image1 from '../public/assets/example.jpg';
+import image2 from '../public/assets/istockphoto.jpg';
 
 import { Navbar, Banner, Slideshow, Footer, TourBanner, Pictures } from '../components/index';
 

@@ -2,7 +2,7 @@ import styles from '../styles/components/Pictures.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import image from '../public/example.jpg';
+import image from '../public/assets/example.jpg';
 
 export default function Navbar() {
     return (
