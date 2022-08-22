@@ -1,8 +1,8 @@
 .footer {
-    background-color: var(--accent-color-1);
-    color: var(--font-primary);
+    background-color: var(--main-bg-color);
+    color: var(--font-secondary);
 
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     /* position: absolute; */
     width: 100%;
     height: max-content;

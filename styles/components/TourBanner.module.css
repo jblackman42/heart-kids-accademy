@@ -1,6 +1,6 @@
 .infoBanner {
-    background-color: var(--accent-color-1);
-    color: var(--font-primary);
+    background-color: var(--main-bg-color);
+    color: var(--font-secondary);
     font-weight: bold;
     padding: 2rem;
     display: block;
@@ -13,9 +13,9 @@
     cursor: pointer;
 }
 
-.infoBanner:hover {
+/* .infoBanner:hover {
     background-color: #181818;
-}
+} */
 
 .infoBanner h1 {
     margin: 0;

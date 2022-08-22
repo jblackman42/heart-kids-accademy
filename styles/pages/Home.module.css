@@ -5,3 +5,14 @@
 .container h1 {
   text-align: center;
 }
+
+.paragraphContainer {
+  width: 80%;
+  margin: 6rem auto;
+  color: var(--font-secondary);
+  filter: drop-shadow(0 0 1px black);
+}
+
+.paragraphContainer h1 {
+  text-align: center;
+}

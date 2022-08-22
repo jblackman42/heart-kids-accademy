@@ -1,0 +1,13 @@
+.picturesContainer {
+    display: flex;
+    background-color: var(--main-bg-color);
+
+    box-shadow: rgba(0, 0, 0, 0.11) 0px -3px 6px, rgba(0, 0, 0, 0.18) 0px -3px 6px;
+}
+
+
+@media screen and (max-width: 824px) {
+    .picturesContainer {
+        flex-direction: column;
+    }
+}

@@ -6,7 +6,7 @@ export default function Footer() {
         <Link href='/contact'>
             <div className={styles.infoBanner}>
                 <h1>Schedule A Tour Now</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem soluta sint ipsam nam neque quaerat eius tempore, aspernatur consequatur impedit.</p>
+                <p>At Heart Kids Academy children will experience hands on learning and play in an inspiring, exciting, developmentally appropriate environment. Our mission is to provide a positive foundation in an environment where learning is fun.</p>
             </div>
         </Link>
     )
