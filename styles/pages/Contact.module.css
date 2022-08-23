@@ -16,6 +16,7 @@
 
 .contactInfo .row p {
     margin: auto 0;
+    text-align: right;
 }
 
 .paragraphContainer {
