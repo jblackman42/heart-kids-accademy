@@ -65,6 +65,10 @@
     place-items: center;
 }
 
+.navbar svg {
+    font-size: 1.5rem;
+}
+
 .navbar img {
     /* COMMENT OR UNCOMMENT THIS OUT TO SWITCH BETWEEN BLACK LOGO AND WHITE LOGO */
     filter: invert(1);
@@ -72,7 +76,7 @@
     min-width: 150px !important;
 }
 
-.navbar svg {
+.navbar .menuBtn {
     display: none;
     visibility: hidden;
 }
@@ -112,7 +116,15 @@
         margin-right: auto;
     }
 
-    .navbar svg {
+    .navbar ul .socials {
+        margin-inline: auto;
+    }
+
+    .navbar ul li .socialIcon {
+        width: max-content !important;
+    }
+
+    .navbar .menuBtn {
         display: block;
         visibility: visible;
         font-size: 2rem;
@@ -122,7 +134,8 @@
 
     .links {
         transition: height 500ms ease;
-        height: calc(53px * 4);
+        /* 5 is the number of elements in the navbar */
+        height: calc(53px * 5);
         /* background-color: red; */
     }
 

@@ -1,27 +1,23 @@
 import styles from '../styles/components/Pictures.module.css';
 import Image from 'next/image';
-import Link from 'next/link';
 
 import image from '../public/assets/example.jpg';
 
-export default function Navbar() {
+export default function Navbar(props) {
+    const { imgs } = props;
     return (
         <div className={styles.picturesContainer}>
-        <Image 
-            src={image}
-            alt="description of image"
-            className={styles.image}
-        />
-        <Image 
-            src={image}
-            alt="description of image"
-            className={styles.image}
-        />
-        <Image 
-            src={image}
-            alt="description of image"
-            className={styles.image}
-        />
+            {imgs.map((image, index) => {
+                return (
+                    <Image 
+                        src={image}
+                        alt="description of images"
+                        className={styles.image}
+                        key={index}
+                        priority={true}
+                    />
+                )
+            })}
         </div>
     )
 }

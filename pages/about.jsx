@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/pages/About.module.css'
 
-import { Navbar, Banner, TourBanner, Footer } from '../components/index';
+import { Layout, TourBanner } from '../components/index';
 
 import image from '../public/assets/example.jpg';
 
@@ -13,9 +13,7 @@ export default function About() {
         <title>About - Heart Kids Academy</title>
         <meta property="og:title" content="About - Heart Kids Academy" />
       </Head>
-      <div className={styles.container}>
-        <Navbar />
-        {/* <Banner /> */}
+      <Layout>
         <div className={styles.paragraphContainer}>
           <h1 className={styles.title}>Our Mission</h1>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga ex sit animi commodi ipsa corporis neque itaque, ducimus sunt minus vel reprehenderit, fugit eligendi quos culpa alias doloremque perspiciatis est dolorem adipisci nostrum aliquam molestias nam? Ipsa facilis reiciendis corporis.</p>
@@ -36,11 +34,44 @@ export default function About() {
           />
         </div>
 
+        <div className={styles.paragraphContainer}>
+          <h1 className={styles.title}>Hours</h1>
+          <table>
+            <tbody>
+              <tr>
+                <th>Sunday</th>
+                <td>Closed</td>
+              </tr>
+              <tr>
+                <th>Monday</th>
+                <td>6:30am-5:30pm</td>
+              </tr>
+              <tr>
+                <th>Tuesday</th>
+                <td>6:30am-5:30pm</td>
+              </tr>
+              <tr>
+                <th>Wednesday</th>
+                <td>6:30am-5:30pm</td>
+              </tr>
+              <tr>
+                <th>Thursday</th>
+                <td>6:30am-5:30pm</td>
+              </tr>
+              <tr>
+                <th>Friday</th>
+                <td>6:30am-5:30pm</td>
+              </tr>
+              <tr>
+                <th>Saturday</th>
+                <td>Closed</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <TourBanner />
-
-        <Footer />
-
-      </div>
+      </Layout>
     </>
   )
 }

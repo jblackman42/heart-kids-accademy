@@ -5,7 +5,7 @@
     width: 90%;
     max-width: 1000px;
     min-width: 40%;
-    margin: 2rem auto;
+    margin: 0 auto;
 }
 
 .contactInfo .row {
@@ -16,4 +16,37 @@
 
 .contactInfo .row p {
     margin: auto 0;
+}
+
+.paragraphContainer {
+    width: 80%;
+    margin-inline: auto;
+    text-align: justify;
+}
+.paragraphContainer table {
+    margin: 2rem auto;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+    width: max-content;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+.title::after, .title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: calc(40vw - 50%);
+    background-color: currentColor;
+}
+
+.title::before {
+    right: 100%;
+}
+.title::after {
+    left: 100%;
 }

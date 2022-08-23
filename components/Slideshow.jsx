@@ -2,7 +2,7 @@
 import { useState, useEffect, useReducer } from 'react';
 import Image from 'next/image';
 
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
+import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 import { BsFillCircleFill } from 'react-icons/bs';
 import styles from '../styles/components/Slideshow.module.css';
 
@@ -26,13 +26,13 @@ export default function Slideshow(props) {
     }, autoscrollDelay)
 
     const stopAutoscroll = () => {
-        console.log('stop')
+        // console.log('stop')
         isAutoscrolling = false;
 
         setTimeout(() => startAutoscroll(), 10000)
     }
     const startAutoscroll = () => {
-        console.log('start')
+        // console.log('start')
         isAutoscrolling = true;
     }
 
@@ -85,10 +85,10 @@ export default function Slideshow(props) {
         <>
             <div className={styles.slideshow} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
                 <div className={styles.arrowLeft} onClick={() => scrollLeft()}>
-                    <AiOutlineArrowLeft />
+                    <AiOutlineLeft />
                 </div>
                 <div className={styles.arrowRight} onClick={() => scrollRight()}>
-                    <AiOutlineArrowRight />
+                    <AiOutlineRight />
                 </div>
                 {images && images.map((image, index) => {
                     return (

@@ -7,20 +7,21 @@ import styles from '../styles/pages/Home.module.css'
 import logo from '../public/assets/HeartKidsAcademyLogo.svg';
 import image1 from '../public/assets/example.jpg';
 import image2 from '../public/assets/istockphoto.jpg';
+import image3 from '../public/assets/example2.jpg';
 
-import { Navbar, Banner, Slideshow, Footer, TourBanner, Pictures } from '../components/index';
+// import { Navbar, Banner, Slideshow, Footer, TourBanner, Pictures } from '../components/index';
+import { Layout, Slideshow, Footer, TourBanner, Pictures } from '../components/index';
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Home - Heart Kids Academy</title>
+        <meta property="og:title" content="Heart Kids Academy" />
         {/* <link rel="shortcut icon" href={favicon} type="image/x-icon" /> */}
       </Head>
-      <div className={styles.container}>
-        <Navbar />
-        <Banner />
-        <Slideshow imgs={[logo, image1, image2]} autoscroll={true} />
+      <Layout>
+        <Slideshow imgs={[logo, image1, image2, image3, image3, image3, image3, image3]} autoscroll={true} />
 
         <TourBanner />
 
@@ -31,11 +32,8 @@ export default function Home() {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eum. Explicabo provident, eligendi ea blanditiis ipsa temporibus sed facere modi.</p>
         </div>
 
-        <Pictures />
-
-        <Footer />
-
-      </div>
+        <Pictures imgs={[image1, image1, image1]} />
+      </Layout>
     </>
   )
 }

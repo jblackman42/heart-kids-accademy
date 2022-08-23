@@ -14,8 +14,7 @@ export default function Tour() {
       <div className={styles.container}>
         <Navbar />
         <Banner />
-        <h1>This is a test</h1>
-        <h1>What to Expect</h1>
+        
       </div>
     </>
   )

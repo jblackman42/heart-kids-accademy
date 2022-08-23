@@ -4,6 +4,7 @@ import Slideshow from './Slideshow';
 import Footer from './Footer';
 import TourBanner from './TourBanner';
 import Pictures from './Pictures';
+import Layout from './Layout';
 
 export {
     Banner,
@@ -11,5 +12,6 @@ export {
     Slideshow,
     Footer,
     TourBanner,
-    Pictures
+    Pictures,
+    Layout
 }

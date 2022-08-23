@@ -5,7 +5,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../public/assets/HeartKidsAcademyLogo.svg';
 
-import { GiHamburgerMenu } from 'react-icons/gi'
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { FaFacebookSquare, FaInstagramSquare } from 'react-icons/fa';
+import { TiSocialSkype } from 'react-icons/ti'
 
 export default function Navbar() {
     const [navOpen, setNavOpen] = useState(false)
@@ -29,13 +31,17 @@ export default function Navbar() {
                             />
                         </a>
                     </Link>
-                    <GiHamburgerMenu className='menuBtn' onClick={() => setNavOpen(!navOpen)} />
+                    <GiHamburgerMenu className={styles.menuBtn} onClick={() => setNavOpen(!navOpen)} />
                 </li>
                 <ul className={`${styles.links} ${!navOpen ? styles.closed : ''}`} >
                     <li><Link href="/">home</Link></li>
                     <li><Link href="/about">about us</Link></li>
                     <li><Link href="/tour">get a tour</Link></li>
                     <li><Link href="/contact">contact us</Link></li>
+                    <li className={styles.socials}>
+                        <a href='https://www.facebook.com/heartkidsacademy/' target='_blank' rel="noreferrer" aria-label='Facebook' className={styles.socialIcon}><FaFacebookSquare /></a>
+                        <a href='https://www.instagram.com/heartkidsacademy/' target='_blank' rel="noreferrer" aria-label='Instagram' className={styles.socialIcon}><FaInstagramSquare /></a>
+                    </li>
                 </ul>
             </ul>
         </nav>

@@ -13,6 +13,9 @@
 .paragraphContainer p:last-of-type {
     padding-bottom: 2rem;
 }
+.paragraphContainer table {
+    margin: 2rem auto;
+}
 
 .imageContainer {
     width: 90%;

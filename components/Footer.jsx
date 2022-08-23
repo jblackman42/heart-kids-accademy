@@ -9,12 +9,12 @@ export default function Footer() {
             <ul>
                 <li className={styles.name}>Heart Kids Academy</li>
                 <li><Link href='/'><a>Home</a></Link></li>
-                <li><Link href='/about'><a>Who We Are</a></Link></li>
+                <li><Link href='/about'><a>About Us</a></Link></li>
                 <li><Link href='/tour'><a>Get a Tour</a></Link></li>
                 <li><Link href='/contact'><a>Contact Us</a></Link></li>
                 <div className={styles.socials}>
-                    <li><a href='https://www.facebook.com/heartkidsacademy/' target='_blank' rel="noreferrer"><FaFacebookSquare /></a></li>
-                    <li><a href='https://www.instagram.com/heartkidsacademy/' target='_blank' rel="noreferrer"><FaInstagramSquare /></a></li>
+                    <li><a href='https://www.facebook.com/heartkidsacademy/' target='_blank' rel="noreferrer" aria-label='Facebook'><FaFacebookSquare /></a></li>
+                    <li><a href='https://www.instagram.com/heartkidsacademy/' target='_blank' rel="noreferrer" aria-label='Instagram'><FaInstagramSquare /></a></li>
                 </div>
             </ul>
         </footer>
