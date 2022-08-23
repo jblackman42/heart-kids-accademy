@@ -2,7 +2,7 @@
     background-color: var(--main-bg-color);
     color: var(--font-secondary);
 
-    /* margin-top: 2rem; */
+    margin-top: auto;
     /* position: absolute; */
     width: 100%;
     height: max-content;

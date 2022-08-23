@@ -21,7 +21,7 @@ export default function Home() {
         {/* <link rel="shortcut icon" href={favicon} type="image/x-icon" /> */}
       </Head>
       <Layout>
-        <Slideshow imgs={[logo, image1, image2, image3, image3, image3, image3, image3]} autoscroll={true} />
+        <Slideshow imgs={[logo, image1, image2, image3]} autoscroll={true} />
 
         <TourBanner />
 

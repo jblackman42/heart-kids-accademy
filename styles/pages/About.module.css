@@ -1,11 +1,13 @@
 .paragraphContainer {
-    width: 80%;
+    width: 90%;
+    max-width: 1000px;
+    min-width: 40%;
     margin-inline: auto;
     text-align: justify;
 }
 
 .paragraphContainer p {
-    padding-inline: 2rem;
+    padding-inline: 1rem;
 }
 .paragraphContainer p:first-of-type {
     padding-top: 2rem;

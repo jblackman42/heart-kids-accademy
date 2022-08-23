@@ -47,11 +47,12 @@
     text-align: center;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    color: #fff;
+    color: var(--font-primary);
     box-shadow: 0 0 40px 40px var(--btn-color) inset, 0 0 0 0 var(--btn-color);
-    transition: box-shadow 150ms ease-in-out;
+    transition: box-shadow 150ms ease-in-out, color 150ms linear;
 }
 .button:hover {
     outline: 0;
     box-shadow: 0 0 10px 0 var(--btn-color) inset, 0 0 5px 0px var(--btn-color);
+    color: var(--font-secondary);
 }
