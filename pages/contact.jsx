@@ -13,21 +13,21 @@ export default function Contact() {
         </Head>
       </Head>
       <Layout>
-        <div className={styles.contactInfo}>
+        <address className={styles.contactInfo}>
           <h1 className={styles.title}>Contact Info</h1>
           <div className={styles.row}>
-            <h1>Location</h1>
-            <p>Pure Heart Church, Glendale</p>
+            <h1>Location:</h1>
+            <p>14240 N 43rd Ave, Glendale, AZ 85306</p>
           </div>
           <div className={styles.row}>
-            <h1>Phone</h1>
+            <h1>Phone:</h1>
             <p><a href="tel:602-732-6283">(602) 732-6283</a></p>
           </div>
           <div className={styles.row}>
-            <h1>Email</h1>
-            <p><a href="mailto: example@pureheart.org">Email@pureheart.org</a></p>
+            <h1>Email:</h1>
+            <p><a href="mailto:info@heartkidsacademy.org">info@heartkidsacademy.org</a></p>
           </div>
-        </div>
+        </address>
         
         <div className={styles.paragraphContainer}>
           <h1 className={styles.title}>Hours</h1>

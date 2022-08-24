@@ -1,14 +1,11 @@
 .paragraphContainer {
-    width: 90%;
+    width: 80%;
     max-width: 1000px;
     min-width: 40%;
     margin-inline: auto;
     text-align: justify;
 }
 
-.paragraphContainer p {
-    padding-inline: 1rem;
-}
 .paragraphContainer p:first-of-type {
     padding-top: 2rem;
 }
@@ -30,6 +27,7 @@
     top: 50%;
     height: 2px;
     width: calc(40vw - 50%);
+    max-width: calc(500px - 50%);
     background-color: currentColor;
 }
 
@@ -74,4 +72,33 @@
     display: grid;
     place-items: center;
     margin-bottom: 2rem;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.btnContainer a {
+    margin: .5rem;
+}
+.contactInfo {
+    font-style: normal;
+    width: max-content;
+    margin-inline: auto;
+}
+.contactInfo p {
+    padding: 0 !important;
+}
+.contactInfo p a {
+    text-decoration: underline;
+}
+@media screen and (max-width: 425px) {
+    .title::after, .title::before {
+        width: calc(45vw - 50%);
+    }
+    .paragraphContainer {
+        width: 95%;
+        font-size: .9rem;
+    }
 }

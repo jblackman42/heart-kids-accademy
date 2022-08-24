@@ -32,7 +32,7 @@
     margin: 0 .5rem;
 }
 
-.navbar ul.links li:hover {
+.navbar li.links li:hover {
     /* background-color: rgba(255,255,255,.2); */
     text-decoration: underline;
 }
@@ -53,6 +53,8 @@
 
 /* removes the dot to the right of the last link */
 .navbar ul li:last-of-type::after {
+    display: none;
+}.navbar ul li:first-of-type::after {
     display: none;
 }
 
@@ -133,6 +135,7 @@
     }
 
     .links {
+        flex-direction: column;
         transition: height 500ms ease;
         /* 5 is the number of elements in the navbar */
         height: calc(53px * 5);

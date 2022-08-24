@@ -8,7 +8,7 @@ export default function Document() {
         <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' />
 
         <meta property="og:title" content="Home - Heart Kids Academy" />
-        <meta name="description" content="At Heart Kids Academy children will experience hands on learning and play in an inspiring, exciting, developmentally appropriate environment. Our mission is to provide a positive foundation for learning in a faith-based environment where learning is fun." />
+        <meta name="description" content="Heart Kids Academy is a preschool daycare located at Pure Heart Church in Glendale Arizona. Here at Heart Kids Academy children will experience hands on learning and play in an inspiring, exciting, developmentally appropriate environment. Our mission is to provide a positive foundation for learning in a faith-based environment where learning is fun." />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="article" />
         <meta property="og:description" content="At Heart Kids Academy children will experience hands on learning and play in an inspiring, exciting, developmentally appropriate environment. Our mission is to provide a positive foundation for learning in a faith-based environment where learning is fun." />

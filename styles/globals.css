@@ -70,6 +70,11 @@ p {
   box-sizing: border-box;
 }
 
+iframe {
+  max-width: 100%;
+  border: none;
+}
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
