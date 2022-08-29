@@ -24,13 +24,13 @@ export default function Tour() {
             <p><strong>Email:</strong> <a href="mailto:info@heartkidsacademy.org">info@heartkidsacademy.org</a></p>
           </address>
         </div>
-        <div className={styles.paragraphContainer}>
+        {/* <div className={styles.paragraphContainer}>
           <h1 className={styles.title}>Online Tour</h1>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga ex sit animi commodi ipsa corporis neque itaque, ducimus sunt minus vel reprehenderit, fugit eligendi quos culpa alias doloremque perspiciatis est dolorem adipisci nostrum aliquam molestias nam? Ipsa facilis reiciendis corporis.</p>
           <div className={styles.videoContainer}>
             <iframe className={styles.video} src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fheartkidsacademy%2Fvideos%2F866398437210125%2F&show_text=false&width=560&t=0" width="560" height="314" title='Facebook virtual tour video' scrolling="no" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen={true}></iframe>
           </div>
-        </div>
+        </div> */}
       </Layout>
     </>
   )

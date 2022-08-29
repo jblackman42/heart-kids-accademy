@@ -35,9 +35,9 @@ export default function Navbar() {
                 </li>
                 <ul className={`${styles.links} ${!navOpen ? styles.closed : ''}`} >
                     <li><Link href="/">home</Link></li>
-                    <li><Link href="/about">about us</Link></li>
-                    <li><Link href="/tour">get a tour</Link></li>
-                    <li><Link href="/contact">contact us</Link></li>
+                    <li><Link href="/">about us</Link></li>
+                    <li><Link href="/">get a tour</Link></li>
+                    <li><Link href="/">contact us</Link></li>
                     <li className={styles.socials}>
                         <a href='https://www.facebook.com/heartkidsacademy/' target='_blank' rel="noreferrer" aria-label='Facebook' className={styles.socialIcon}><FaFacebookSquare /></a>
                         <a href='https://www.instagram.com/heartkidsacademy/' target='_blank' rel="noreferrer" aria-label='Instagram' className={styles.socialIcon}><FaInstagramSquare /></a>

@@ -21,18 +21,9 @@ export default function Home() {
         {/* <link rel="shortcut icon" href={favicon} type="image/x-icon" /> */}
       </Head>
       <Layout>
-        <Slideshow imgs={[logo, image3]} autoscroll={true} />
-
-        <TourBanner />
-
         <div className={styles.paragraphContainer}>
-          <h1>Who We Are</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga ex sit animi commodi ipsa corporis neque itaque, ducimus sunt minus vel reprehenderit, fugit eligendi quos culpa alias doloremque perspiciatis est dolorem adipisci nostrum aliquam molestias nam? Ipsa facilis reiciendis corporis.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor optio mollitia expedita adipisci delectus tempore vero dolores obcaecati numquam porro?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eum. Explicabo provident, eligendi ea blanditiis ipsa temporibus sed facere modi.</p>
+          <h1 className={styles.title}>Website under construction</h1>
         </div>
-
-        <Pictures imgs={[image1, image1, image1]} />
       </Layout>
     </>
   )
